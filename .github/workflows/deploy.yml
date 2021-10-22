@@ -25,4 +25,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: Anantgoel0123456/anant-python:latest
+          tags: anantgoel0123456/anant-python:latest
