@@ -13,7 +13,6 @@ RUN apt-get -y update && apt-get -y upgrade && \
 RUN curl -fsSL https://github.com/jaskaranSM/megasdkrest/releases/download/v0.1/megasdkrest -o /usr/local/bin/megasdkrest \
     && chmod +x /usr/local/bin/megasdkrest
 
-# Cleanup environment
 RUN apt-get -qq -y autoremove --purge \
     && apt-get -qq -y clean \
     && rm -rf -- /var/lib/apt/lists/* /var/cache/apt/archives/* /etc/apt/sources.list.d/*
